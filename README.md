@@ -1,4 +1,4 @@
-# CodeReviewBot
+# CodeReviewBot - IN DEVELOPMENT
 
 ## Motivation
 It's very common situation that novice programmers want somebody to review their code.
