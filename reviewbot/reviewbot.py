@@ -17,6 +17,3 @@ def create_pr(username, repository):
     pull_request = github_connector.run(repository_name, "master", "empty", "review")
     return f"Twoj PR: <a href='{pull_request.html_url}/files'>Link</a>"
 
-
-def start():
-    app.run(debug=False)
