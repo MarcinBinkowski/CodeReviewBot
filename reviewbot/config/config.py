@@ -59,7 +59,7 @@ class Configuration(metaclass=SingletonMeta):
 
     @property
     def discord_command(self):
-        return os.environ.get("!CodeReview")
+        return "!CodeReview"
 
     @staticmethod
     def default_discord_message(pull_request_link):
