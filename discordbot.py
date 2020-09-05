@@ -17,8 +17,8 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    await message.channel.send(f"Hi {message.author.mention}! Creating Pull Request for your Code Review...")
     if message.content.startswith('!CodeReview'):
+        await message.channel.send(f"Hi {message.author.mention}! Creating Pull Request for your Code Review...")
         repository_link = message.content.replace('!CodeReview', '')
         link_contents = repository_link.split("/")
         user, repository = [

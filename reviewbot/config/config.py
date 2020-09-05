@@ -65,4 +65,5 @@ class Configuration(metaclass=SingletonMeta):
     def default_discord_message(pull_request_link):
         return f"Link to created Pull Request: {pull_request_link}"
 
+
 CONFIG = Configuration()
