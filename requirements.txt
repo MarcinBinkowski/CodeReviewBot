@@ -1,4 +1,4 @@
 flask==1.1.2
 pygithub==1.53
 python-dotenv==0.14.0
-gunicorn
+discord.py==1.4.1

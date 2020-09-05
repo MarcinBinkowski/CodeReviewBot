@@ -66,7 +66,7 @@ class GithubConnector:
         for file in files:
             LOGGER.debug("Deleting file <%s>", file.path)
             repository.delete_file(
-                file.path, CONFIG.get_default_commit_message(file.name), file.sha, branch=target_branch_name)
+                file.path, CONFIG.default_commit_message(file.name), file.sha, branch=target_branch_name)
         return empty_branch
 
     def create_branch_if_not_exist(self, repository: Repository, source_branch_name, target_branch_name) -> Branch:

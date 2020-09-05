@@ -50,7 +50,19 @@ class Configuration(metaclass=SingletonMeta):
         return "master"
 
     @staticmethod
-    def get_default_commit_message(file_name):
+    def default_commit_message(file_name):
         return f"Remove file <{file_name}>"
+
+    @property
+    def discord_token(self):
+        return os.environ.get("DISCORD_TOKEN")
+
+    @property
+    def discord_command(self):
+        return os.environ.get("!CodeReview")
+
+    @staticmethod
+    def default_discord_message(pull_request_link):
+        return f"Link to created Pull Request: {pull_request_link}"
 
 CONFIG = Configuration()
