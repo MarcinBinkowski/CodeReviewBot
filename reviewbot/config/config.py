@@ -65,5 +65,9 @@ class Configuration(metaclass=SingletonMeta):
     def default_discord_message(pull_request_link):
         return f"Link to created Pull Request: {pull_request_link}"
 
+    @property
+    def default_error_message(self):
+        return f"Sorry, something went wrong... Please try creating PR again"
+
 
 CONFIG = Configuration()
