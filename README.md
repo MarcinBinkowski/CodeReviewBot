@@ -11,14 +11,14 @@ So basically it does not need any engagement from the user other than
 providing name of the repository.
 
 ## How to use
-Just open in browser link in the following format:
+Add this bot to your discord server using this link:
 
-```strona/<user>/<repository>```
+https://discord.com/api/oauth2/authorize?client_id=751780836549984407&permissions=18432&scope=bot
 
-and wait until link is generated - it can take up to few minutes,
-depending on the size of the repository
-(the biggest one this script was tested was "pallets/flask" - it took around 5 minutes to generate)
-I would not risk creating PR for bigger projects - it may take too long.
+and then you can use this bot with command:
+```
+!CodeReview <link_to_repository_on_github>
+```
 
 ## Known issues
 1. Sometimes Server error is raised. If this happens just retry creating PR.
